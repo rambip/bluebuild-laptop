@@ -98,19 +98,30 @@ modules:
 
   - type: default-flatpaks
     configurations:
+      - notify: true
+
+  - type: default-flatpaks
+    configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
           - org.gnome.Loupe
-          - net.thunderbird.Thunderbird
           - org.videolan.VLC
           - com.logseq.Logseq
           - org.gnome.baobab
           - com.github.tchx84.Flatseal
           #- org.zotero.Zotero
           - org.keepassxc.KeePassXC
+      - notify: true
+        scope: system
+        repo:
+          url: https://registry.fedoraproject.org
+          name: fedora_linux
+          title: Fedora Linux
+        install:
+          - net.thunderbird.Thunderbird
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: chezmoi
