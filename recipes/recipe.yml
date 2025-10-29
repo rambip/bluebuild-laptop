@@ -58,6 +58,7 @@ modules:
         - network-manager-applet
         - NetworkManager-tui
         - waypaper
+        - waybar
         - https://github.com/charmbracelet/gum/releases/download/v0.17.0/gum-0.17.0-1.x86_64.rpm
         # error: - package appimagelauncher-2.2.0-travis995~0f91801.x86_64 does not verify: no digest
         #- https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
@@ -81,7 +82,6 @@ modules:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
         - htop
 
   - type: script
@@ -113,7 +113,7 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
+          #- org.mozilla.firefox
           - org.gnome.Loupe
           - org.videolan.VLC
           - com.logseq.Logseq
@@ -136,7 +136,7 @@ modules:
           name: ml4w
           title: ML4W
         install:
-          - com.ml4w.calendar"
+          - com.ml4w.calendar
 
       - scope: user # Also add Flathub user repo, but no user packages
 
