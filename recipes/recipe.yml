@@ -48,6 +48,10 @@ modules:
         - SwayNotificationCenter
         - kitty
         - vim
+        - fd
+        - rg
+        - duf
+        - dust
         - tldr
         - keepassxc
         - nm-connection-editor
