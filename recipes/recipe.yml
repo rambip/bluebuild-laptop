@@ -48,6 +48,7 @@ modules:
         - python3-gobject # remove ?
         - rofi-wayland
         - SwayNotificationCenter
+        - nautilus
         - kitty
         - vim
         - fd
