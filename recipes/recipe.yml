@@ -39,6 +39,7 @@ modules:
         - toilet
         # DE
         - gdm
+        - wlogout
         - hyprland
         - libnotify
         - qt5-qtwayland
