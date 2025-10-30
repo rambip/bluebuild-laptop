@@ -127,16 +127,7 @@ modules:
           - com.github.tchx84.Flatseal
           #- org.zotero.Zotero
       - notify: true
-        scope: system
-        repo:
-          url: https://registry.fedoraproject.org
-          name: fedora_linux
-          title: Fedora Linux
-        install:
-          # install with fedora directly ?
-          - net.thunderbird.Thunderbird
-      - notify: true
-        scope: system
+        scope: user
         repo:
           url: https://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps.flatpakrepo
           name: ml4w
