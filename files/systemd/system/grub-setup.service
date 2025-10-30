@@ -1,0 +1,11 @@
+[Unit]
+Description=Setup GRUB theme and regenerate config
+After=rpm-ostreed.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'mkdir -p /boot/grub2/themes && cp -r /usr/share/grub/themes/vimix /boot/grub2/themes/ && grub2-mkconfig -o /boot/grub2/grub.cfg'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
