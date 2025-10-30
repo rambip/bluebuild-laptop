@@ -105,6 +105,7 @@ modules:
         - Lobster
         - Caveat
         - Twinkle Star
+        - Material Icons
 
   - type: default-flatpaks
     configurations:
