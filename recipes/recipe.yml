@@ -38,6 +38,7 @@ modules:
         - yazi
         - toilet
         # DE
+        - gdm
         - hyprland
         - libnotify
         - qt5-qtwayland
