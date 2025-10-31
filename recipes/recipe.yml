@@ -38,7 +38,7 @@ modules:
         - yazi
         - toilet
         # DE
-        - gdm
+        - lightdm
         - wlogout
         - thunderbird
         - hyprland
