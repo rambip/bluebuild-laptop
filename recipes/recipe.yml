@@ -27,6 +27,7 @@ modules:
         - erikreider/SwayNotificationCenter
         - tofik/nwg-shell
         - solopasha/hyprland
+        - peterwu/rendezvous
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
@@ -48,6 +49,7 @@ modules:
         - uwsm # remove ?
         - python3-gobject # remove ?
         - rofi-wayland
+        - bibata-cursor-themes
         - SwayNotificationCenter
         - nautilus
         - kitty
