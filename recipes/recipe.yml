@@ -128,7 +128,7 @@ modules:
           - com.logseq.Logseq
           - org.gnome.baobab
           - com.github.tchx84.Flatseal
-          #- org.zotero.Zotero
+          - org.zotero.Zotero
       - notify: true
         scope: user
         repo:
