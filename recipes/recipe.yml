@@ -76,6 +76,7 @@ modules:
         - fuse
         - ImageMagick
         - jq
+        - nwg-dock-hyprland
         #- cliphist
 
       #exclude:
