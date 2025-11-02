@@ -38,6 +38,8 @@ modules:
         - bat
         - yazi
         - toilet
+        - podman
+        - podman-compose
         # DE
         - gdm
         - wlogout
