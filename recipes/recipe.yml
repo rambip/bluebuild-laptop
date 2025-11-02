@@ -67,7 +67,6 @@ modules:
         - waypaper
         - waybar
         - https://github.com/charmbracelet/gum/releases/download/v0.17.0/gum-0.17.0-1.x86_64.rpm
-        - https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
         - hyprshot
         # Utils
         - tailscale
@@ -99,6 +98,9 @@ modules:
       - "curl https://github.com/InioX/matugen/releases/download/v3.0.0/matugen-3.0.0-x86_64.tar.gz -o /usr/bin/matugen"
       - "curl -LsSf https://astral.sh/uv/install.sh | sh"
       - "systemctl set-default graphical.target"
+
+    scripts:
+      - install_appimagelauncher.sh
 
   - type: fonts
     fonts:
