@@ -79,8 +79,6 @@ modules:
         # media transfer protocol. Needed for usb devices
         - libmtp
         - gvfs-mtp
-        - simple-mtpfs
-        #- cliphist
 
       #exclude:
       #  - alacritty
