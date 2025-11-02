@@ -130,6 +130,8 @@ modules:
           - org.gnome.baobab
           - com.github.tchx84.Flatseal
           - org.zotero.Zotero
+          - it.mijorus.smile
+
       - notify: true
         scope: user
         repo:
