@@ -41,6 +41,7 @@ modules:
         - podman
         - podman-compose
         - make
+        - java-25-openjdk
         # DE
         - gdm
         - wlogout
