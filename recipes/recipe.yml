@@ -130,7 +130,7 @@ modules:
           - org.gnome.baobab
           - com.github.tchx84.Flatseal
           - org.zotero.Zotero
-          - it.mijorus.smile
+          - org.gnome.Characters
 
       - notify: true
         scope: user
