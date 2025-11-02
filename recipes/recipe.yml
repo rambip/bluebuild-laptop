@@ -79,6 +79,7 @@ modules:
         # media transfer protocol. Needed for usb devices
         - libmtp
         - gvfs-mtp
+        - gnome-calendar
 
       #exclude:
       #  - alacritty
