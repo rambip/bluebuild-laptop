@@ -43,6 +43,7 @@ modules:
         - make
         - strace
         - clang
+        - uv
         # DE
         - gdm
         - wlogout
@@ -104,7 +105,6 @@ modules:
       - "curl https://github.com/sentriz/cliphist/releases/download/v0.7.0/v0.7.0-linux-amd64 -o /usr/bin/cliphist"
       - "curl https://github.com/jacobdeichert/mask/releases/download/mask%2F0.11.6/mask-0.11.6-x86_64-unknown-linux-gnu.zip -o /usr/bin/mask"
       - "curl https://github.com/InioX/matugen/releases/download/v3.0.0/matugen-3.0.0-x86_64.tar.gz -o /usr/bin/matugen"
-      - "curl -LsSf https://astral.sh/uv/install.sh | sh"
       - "systemctl set-default graphical.target"
 
     scripts:
