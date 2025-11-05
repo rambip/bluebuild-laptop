@@ -58,6 +58,7 @@ modules:
         - bibata-cursor-themes
         - SwayNotificationCenter
         - nautilus
+        - evince
         - kitty
         - vim
         - fd
