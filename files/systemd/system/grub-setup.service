@@ -4,8 +4,8 @@ After=rpm-ostreed.service
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'mkdir -p /boot/grub2/themes && cp -r /usr/share/grub/themes/vimix /boot/grub2/themes/ && grub2-mkconfig -o /boot/grub2/grub.cfg'
+ExecStart=/bin/bash -c 'mkdir -p /boot/grub2/themes && cp -r /usr/share/grub/themes/vimix /boot/grub2/themes/ && /usr/sbin/grub2-mkconfig-patched -o /boot/grub2/grub.cfg'
 RemainAfterExit=yes
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
