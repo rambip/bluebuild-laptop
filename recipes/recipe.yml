@@ -112,19 +112,6 @@ modules:
     scripts:
       - install_appimagelauncher.sh
 
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - IBMPlexMono
-        - FiraCode
-      google-fonts:
-        - Dancing Script
-        - Pacifico
-        - Lobster
-        - Caveat
-        - Twinkle Star
-        - Material Icons
-
   - type: default-flatpaks
     configurations:
       - notify: true
