@@ -57,6 +57,7 @@ modules:
         - rofi-wayland
         - bibata-cursor-themes
         - blueman
+        - gnome-system-monitor
         - SwayNotificationCenter
         - nautilus
         - evince
