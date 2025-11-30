@@ -69,6 +69,7 @@ modules:
         - dust
         - fzf
         - tldr
+        - gnome-font-viewer
         - keepassxc
         - nm-connection-editor
         - network-manager-applet
@@ -131,6 +132,15 @@ modules:
           - org.gnome.baobab
           - com.github.tchx84.Flatseal
           - org.zotero.Zotero
+
+      - notify: true
+        scope: user
+        repo:
+          url: flatphttps://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps.flatpakrepo
+          name: ml4w
+          title: ML4W
+        install:
+          - com.ml4w.calendar
 
       - scope: user # Also add Flathub user repo, but no user packages
 
