@@ -32,65 +32,63 @@ modules:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       packages:
-        # Term
-        - starship
-        - zsh
-        - bat
-        - yazi
-        - toilet
-        - podman
-        - podman-compose
-        - make
-        - strace
-        - clang
-        - uv
-        # DE
+        # System Integration
         - gdm
-        - wlogout
-        - thunderbird
         - hyprland
         - libnotify
         - qt5-qtwayland
         - qt6-qtwayland
         - uwsm # remove ?
         - python3-gobject # remove ?
-        - rofi-wayland
-        - bibata-cursor-themes
-        - blueman
-        - gnome-system-monitor
-        - SwayNotificationCenter
+
+        # Desktop Applications
+        - thunderbird
         - nautilus
         - evince
         - kitty
         - vim
-        - fd
-        - rg
-        - duf
-        - dust
-        - fzf
-        - tldr
-        - gnome-font-viewer
+        - gnome-system-monitor
+        - gnome-calendar
         - keepassxc
+
+        # Desktop Utilities
+        - wlogout
+        - rofi-wayland
+        - SwayNotificationCenter
+        - waybar
+        - waypaper
+        - hyprshot
+        - wf-recorder
+        - nwg-dock-hyprland
+        - rofimoji
+
+        # Themes & UI
+        - bibata-cursor-themes
+
+        # Networking
+        - blueman
         - nm-connection-editor
         - network-manager-applet
         - NetworkManager-tui
-        - waypaper
-        - waybar
-        - https://github.com/charmbracelet/gum/releases/download/v0.17.0/gum-0.17.0-1.x86_64.rpm
-        - hyprshot
-        - wf-recorder
-        # Utils
         - tailscale
+
+        # Containers & Build Tools
+        - podman
+        - podman-compose
+        - make
+        - clang
+
+        # System Utilities
         - rsync
         - fuse
         - ImageMagick
         - jq
-        - nwg-dock-hyprland
-        - rofimoji
-        # media transfer protocol. Needed for usb devices
+        - strace
+        - toilet
+
+        # Device Support
         - libmtp
         - gvfs-mtp
-        - gnome-calendar
 
       #exclude:
       #  - alacritty
