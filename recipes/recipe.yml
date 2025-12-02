@@ -20,14 +20,10 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
-        - lihaohong/yazi
-        # usefull ?
         - alebastr/sway-extras
         - erikreider/SwayNotificationCenter
         - tofik/nwg-shell
         - solopasha/hyprland
-        - peterwu/rendezvous
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
@@ -38,8 +34,7 @@ modules:
         - libnotify
         - qt5-qtwayland
         - qt6-qtwayland
-        - uwsm # remove ?
-        - python3-gobject # remove ?
+        - python3-gobject 
 
         # Desktop Applications
         - thunderbird
@@ -48,7 +43,6 @@ modules:
         - kitty
         - vim
         - gnome-system-monitor
-        - gnome-calendar
         - keepassxc
 
         # Desktop Utilities
@@ -59,11 +53,10 @@ modules:
         - waypaper
         - hyprshot
         - wf-recorder
+        - swappy
+        - 
         - nwg-dock-hyprland
         - rofimoji
-
-        # Themes & UI
-        - bibata-cursor-themes
 
         # Networking
         - blueman
@@ -82,26 +75,10 @@ modules:
         - rsync
         - fuse
         - ImageMagick
-        - jq
-        - strace
-        - toilet
 
         # Device Support
         - libmtp
         - gvfs-mtp
-
-      #exclude:
-      #  - alacritty
-      #  - waybar
-      #  - waybar-git
-      #  - fuzzel
-      #  - mako
-      #  - swaybg
-    remove:
-      packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - htop
 
   - type: script
     snippets:
@@ -123,18 +100,18 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          #- org.mozilla.firefox
           - org.gnome.Loupe
           - org.videolan.VLC
           - com.logseq.Logseq
           - org.gnome.baobab
           - com.github.tchx84.Flatseal
           - org.zotero.Zotero
+          - org.gnome.Calendar
 
       - notify: true
         scope: user
         repo:
-          url: flatphttps://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps.flatpakrepo
+          url: https://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps.flatpakrepo
           name: ml4w
           title: ML4W
         install:
