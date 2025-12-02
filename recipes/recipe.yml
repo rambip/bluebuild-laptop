@@ -35,6 +35,7 @@ modules:
         - qt5-qtwayland
         - qt6-qtwayland
         - python3-gobject
+        - zsh
 
         # Desktop Applications
         - thunderbird
