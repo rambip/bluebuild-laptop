@@ -34,7 +34,7 @@ modules:
         - libnotify
         - qt5-qtwayland
         - qt6-qtwayland
-        - python3-gobject 
+        - python3-gobject
 
         # Desktop Applications
         - thunderbird
@@ -54,7 +54,6 @@ modules:
         - hyprshot
         - wf-recorder
         - swappy
-        - 
         - nwg-dock-hyprland
         - rofimoji
 
