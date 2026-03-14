@@ -80,6 +80,9 @@ modules:
         - libmtp
         - gvfs-mtp
 
+        # audio libs
+        - pipewire-jack-audio-connection-kit-devel
+
   - type: script
     snippets:
       - "curl https://github.com/sentriz/cliphist/releases/download/v0.7.0/v0.7.0-linux-amd64 -o /usr/bin/cliphist"
