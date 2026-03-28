@@ -85,6 +85,7 @@ modules:
 
         # image libs
         - pango
+        - pango-devel
 
   - type: script
     snippets:
