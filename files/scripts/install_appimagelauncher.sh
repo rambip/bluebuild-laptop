@@ -1,4 +1,4 @@
 #!/bin/sh
 
-curl -Lo /tmp/appimagelauncher.rpm https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+curl -Lo https://github.com/TheAssassin/AppImageLauncher/releases/download/v3.0.0-beta-3/appimagelauncher_3.0.0-beta-2-gha287.96cb937_x86_64.rpm
 rpm -i --nodigest --nosignature --noscripts /tmp/appimagelauncher.rpm
