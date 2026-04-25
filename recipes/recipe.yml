@@ -90,6 +90,7 @@ modules:
   - type: script
     snippets:
       - "curl -L https://github.com/ReimuNotMoe/ydotool/releases/download/v1.0.4/ydotoold-release-ubuntu-latest -o /usr/bin/yodotoold"
+      - "chmod +x /usr/bin/yodotoold"
       - "chmod +x /usr/bin/grub2-mkconfig-patched"
 
     scripts:
