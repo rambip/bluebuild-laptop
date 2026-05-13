@@ -23,7 +23,7 @@ modules:
         - alebastr/sway-extras
         - erikreider/SwayNotificationCenter
         - tofik/nwg-shell
-        - solopasha/hyprland
+        - eli-xciv/hyprland
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
