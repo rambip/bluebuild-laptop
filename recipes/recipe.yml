@@ -55,7 +55,6 @@ modules:
         - hyprshot
         - wf-recorder
         - swappy
-        - nwg-dock-hyprland
         - rofimoji
 
         # Networking
