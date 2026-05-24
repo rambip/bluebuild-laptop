@@ -107,7 +107,6 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - org.gnome.Loupe
           - org.videolan.VLC
-          - com.logseq.Logseq
           - org.gnome.baobab
           - com.github.tchx84.Flatseal
           - org.zotero.Zotero
