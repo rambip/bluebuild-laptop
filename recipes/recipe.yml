@@ -28,6 +28,10 @@ modules:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       packages:
+        # Pinned: solopasha/hyprland's aquamarine build needs libdisplay-info.so.2,
+        # but Fedora 44 ships 0.3.0 (.so.3). Install the Fedora 43 build to satisfy it.
+        - https://kojipkgs.fedoraproject.org/packages/libdisplay-info/0.2.0/4.fc43/x86_64/libdisplay-info-0.2.0-4.fc43.x86_64.rpm
+
         # System Integration
         - gdm
         - hyprland
