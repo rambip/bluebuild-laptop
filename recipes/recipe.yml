@@ -31,15 +31,12 @@ modules:
         # - eli-xciv/hyprland: tried 2026-05-13.
         # - lionheartp/Hyprland: 2026-05-22 -> 2026-07-18 (last green build).
         #   Broke 2026-07-19: hyprland 0.55.4 needs libaquamarine.so.11 / libhyprutils.so.12, not in the COPR.
-        - solopasha/hyprland
+        # - lionheartp/Hyprland again 2026-10-07: hyprland 0.56.2 resolves on F44, libdisplay-info pin dropped.
+        - lionheartp/Hyprland
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       packages:
-        # Pinned: solopasha/hyprland's aquamarine build needs libdisplay-info.so.2,
-        # but Fedora 44 ships 0.3.0 (.so.3). Install the Fedora 43 build to satisfy it.
-        - https://kojipkgs.fedoraproject.org/packages/libdisplay-info/0.2.0/4.fc43/x86_64/libdisplay-info-0.2.0-4.fc43.x86_64.rpm
-
         # System Integration
         - gdm
         - hyprland
