@@ -23,6 +23,14 @@ modules:
         - alebastr/sway-extras
         - erikreider/SwayNotificationCenter
         - tofik/nwg-shell
+        # Hyprland COPR history (builds failing since 2026-07-19):
+        # - solopasha/hyprland: used until 2026-05-13, back on 2026-07-19.
+        #   hyprland 0.51.1 there needs aquamarine built against libdisplay-info.so.2 (F44 ships .so.3).
+        #   Pinning the F43 libdisplay-info (1a1b90c) still conflicts (aquamarine >= 0.9.2, gnome-shell).
+        #   As of 2026-09-17: "Chroot not found (fedora-44-x86_64)", only rawhide left.
+        # - eli-xciv/hyprland: tried 2026-05-13.
+        # - lionheartp/Hyprland: 2026-05-22 -> 2026-07-18 (last green build).
+        #   Broke 2026-07-19: hyprland 0.55.4 needs libaquamarine.so.11 / libhyprutils.so.12, not in the COPR.
         - solopasha/hyprland
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
@@ -78,6 +86,7 @@ modules:
         - rsync
         - fuse
         - ImageMagick
+        - udiskie
 
         # Device Support
         - libmtp
@@ -134,6 +143,7 @@ modules:
     user:
       enabled:
         - ssh-agent.service
+        - udiskie.service
     system:
       enabled:
         - chronyd.service
