@@ -54,6 +54,7 @@ modules:
         - vim
         - gnome-system-monitor
         - keepassxc
+        - https://proton.me/download/bridge/protonmail-bridge-3.27.1-1.x86_64.rpm
 
         # Desktop Utilities
         - wlogout
