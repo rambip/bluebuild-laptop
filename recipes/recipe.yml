@@ -99,16 +99,12 @@ modules:
 
   - type: script
     snippets:
-      - "curl -L https://github.com/ReimuNotMoe/ydotool/releases/download/v1.0.4/ydotoold-release-ubuntu-latest -o /usr/bin/yodotoold"
-      - "chmod +x /usr/bin/yodotoold"
+      - "curl -L https://github.com/ReimuNotMoe/ydotool/releases/download/v1.0.4/ydotoold-release-ubuntu-latest -o /usr/bin/ydotoold"
+      - "chmod +x /usr/bin/ydotoold"
       - "chmod +x /usr/bin/grub2-mkconfig-patched"
 
     scripts:
       - install_appimagelauncher.sh
-
-  - type: default-flatpaks
-    configurations:
-      - notify: true
 
   - type: default-flatpaks
     configurations:
