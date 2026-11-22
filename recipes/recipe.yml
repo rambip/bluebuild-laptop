@@ -136,7 +136,7 @@ modules:
   - type: systemd
     user:
       enabled:
-        - ssh-agent.service
+        - gcr-ssh-agent.socket
         - udiskie.service
     system:
       enabled:
